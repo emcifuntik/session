@@ -16,14 +16,7 @@ const EventEmitter = require('events').EventEmitter
 const Session = require('./session')
 
 /**
- * Module exports.
- * @public
- */
-
-module.exports = Store
-
-/**
- * Abstract base class for session stores.
+ * Store class
  * @public
  */
 
@@ -84,3 +77,10 @@ class Store extends EventEmitter {
     return req.session;
   }
 }
+
+/**
+ * Module exports.
+ * @public
+ */
+
+module.exports = Store;
